@@ -10,14 +10,6 @@ export function Footer({ lang }: { lang: Lang }) {
     },
     address: { ms: 'Alamat urusan', en: 'Office address' },
     write: { ms: 'E-mel', en: 'Email' },
-    privacy: {
-      ms: 'Privasi: laman ini tidak menerbitkan data peribadi waris. Maklumat peribadi yang dikongsi melalui e-mel diurus mengikut Notis Perlindungan Data Peribadi W8-DBAK (Akta PDP 2010).',
-      en: 'Privacy: this site publishes no personal data of heirs. Personal information shared by email is handled under the W8-DBAK Personal Data Protection Notice (PDPA 2010).',
-    },
-    rights: {
-      ms: 'Jawatankuasa Pengurusan Wakaf Rumah Batu DBAK (W8-DBAK)',
-      en: 'Rumah Batu DBAK Wakaf Management Committee (W8-DBAK)',
-    },
   };
   return (
     <footer className="on-dark mt-20 bg-green-950 text-ivory">
@@ -94,11 +86,19 @@ export function Footer({ lang }: { lang: Lang }) {
           </div>
         </div>
 
-        <p className="mt-10 max-w-3xl text-sm leading-relaxed text-green-300">
-          {t.privacy[lang]}
-        </p>
-        <p className="mt-4 text-sm text-green-300">
-          © {new Date().getFullYear()} {t.rights[lang]}
+      </div>
+      <div className="bg-[oklch(0.16_0.01_160)] py-3.5">
+        <p className="mx-auto max-w-6xl px-4 text-center text-sm text-ivory/80 sm:px-6">
+          This Digital Experience is Part of the{' '}
+          <a
+            href="https://www.kobisberhad.com"
+            target="_blank"
+            rel="noopener"
+            className="font-medium text-ivory underline underline-offset-4 hover:text-gold"
+          >
+            KOBIS Berhad
+          </a>{' '}
+          Innovation Ecosystem
         </p>
       </div>
     </footer>
