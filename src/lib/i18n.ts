@@ -81,7 +81,7 @@ export const href = (key: RouteKey, lang: Lang): string => routes[key][lang];
 export const altHref = (key: RouteKey, lang: Lang): string =>
   routes[key][lang === 'ms' ? 'en' : 'ms'];
 
-export const SITE_URL = 'https://w8dbak.com';
+export const SITE_URL = 'https://dbaksarawak.org';
 export const SITE_NAME: Bi = {
   ms: 'Rumah Batu — Waris DBAK',
   en: 'Rumah Batu — Waris DBAK',
