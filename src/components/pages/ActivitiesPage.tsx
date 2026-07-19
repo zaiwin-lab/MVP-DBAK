@@ -3,8 +3,37 @@ import { altHref, href, type Lang } from '@/lib/i18n';
 import { Shell } from '@/components/Shell';
 import { Timeline } from '@/components/Timeline';
 import { Pic } from '@/components/Pic';
+import { EightStar } from '@/components/Motif';
 import { renewalTimeline } from '@/content/timeline';
 import { JsonLd, eventLd } from '@/components/JsonLd';
+
+/** Family photo/document albums hosted on the committee's Google Drive. */
+const driveAlbums = [
+  {
+    url: 'https://drive.google.com/drive/folders/1CYkwQXpuJAWeTsOJAfza-UM605yYjS8U',
+    title: { ms: 'Galeri Majlis', en: 'Event Gallery' },
+    desc: {
+      ms: 'Koleksi foto majlis dan perhimpunan keluarga.',
+      en: 'Photograph collections from family gatherings and ceremonies.',
+    },
+  },
+  {
+    url: 'https://drive.google.com/drive/folders/16_t028RQ_MD2PoferpVqtS8XyveKSelw',
+    title: { ms: 'Program Majlis', en: 'Event Programmes' },
+    desc: {
+      ms: 'Aturcara, jemputan dan bahan program majlis keluarga, termasuk jemputan Majlis Perjumpaan Waris 8 (19 September 2020).',
+      en: 'Running orders, invitations and programme material, including the Waris 8 gathering invitation (19 September 2020).',
+    },
+  },
+  {
+    url: 'https://drive.google.com/drive/folders/1bUYEzOjnuKPu-H3XbC474qif-OsDljCW',
+    title: { ms: 'Khatam Quran', en: 'Khatam Quran' },
+    desc: {
+      ms: 'Dokumentasi majlis Khatam Quran keluarga Waris DBAK.',
+      en: 'Documentation of the Waris DBAK family Khatam Quran ceremonies.',
+    },
+  },
+];
 
 const copy = {
   title: { ms: 'Aktiviti & Pencapaian', en: 'Activities & Milestones' },
@@ -12,13 +41,15 @@ const copy = {
     ms: 'Sejak 2020, keluarga ini telah berhimpun semula, membina perlembagaan, memulakan daftar digital, mendokumentasi rumah, dan meraikan seratus tahun wasiat. Inilah rekodnya.',
     en: 'Since 2020 this family has regathered, built a constitution, begun a digital registry, documented the house, and marked the centenary of the will. This is the record.',
   },
-  gatherAlt: {
-    ms: 'Kad jemputan Majlis Perjumpaan dan Mesyuarat Waris 8 pada 19 September 2020 dengan foto Rumah Batu',
-    en: 'Invitation card for the Waris 8 gathering and meeting on 19 September 2020 with a photograph of Rumah Batu',
+  albumsH: { ms: 'Album & dokumen majlis', en: 'Event albums & documents' },
+  albumsLede: {
+    ms: 'Koleksi penuh foto dan bahan majlis tahunan keluarga disimpan dalam album Google Drive jawatankuasa.',
+    en: 'The full photo collections and materials from the family’s annual events are kept in the committee’s Google Drive albums.',
   },
-  gatherCap: {
-    ms: 'Jemputan 19 September 2020, Hotel UCSI Kuching · AJK W8-DBAK',
-    en: 'Invitation, 19 September 2020, UCSI Hotel Kuching · W8-DBAK committee',
+  albumsCta: { ms: 'Buka album di Drive', en: 'Open the album in Drive' },
+  albumsNote: {
+    ms: 'Pautan luar ke Google Drive; dibuka dalam tab baharu.',
+    en: 'External links to Google Drive; each opens in a new tab.',
   },
   featAlt: {
     ms: 'Keluarga besar Waris DBAK bersama Premier Sarawak di dewan besar, April 2025',
@@ -49,30 +80,66 @@ export function ActivitiesPage({ lang }: { lang: Lang }) {
           <p className="mt-4 text-xl text-ink-soft">{t(copy.lede)}</p>
         </header>
 
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
-          <figure>
-            <Pic
-              name="ramah-tamah-2025"
-              alt={t(copy.featAlt)}
-              sizes="(min-width: 640px) 50vw, 100vw"
-              imgClassName="w-full rounded-xl"
-            />
-            <figcaption className="mt-2 text-sm text-ink-soft">
-              {t(copy.featCap)}
-            </figcaption>
-          </figure>
-          <figure>
-            <Pic
-              name="majlis-2020-invite"
-              alt={t(copy.gatherAlt)}
-              sizes="(min-width: 640px) 50vw, 100vw"
-              imgClassName="w-full rounded-xl"
-            />
-            <figcaption className="mt-2 text-sm text-ink-soft">
-              {t(copy.gatherCap)}
-            </figcaption>
-          </figure>
-        </div>
+        <figure className="mt-10">
+          <Pic
+            name="ramah-tamah-2025"
+            alt={t(copy.featAlt)}
+            sizes="(min-width: 1024px) 60rem, 100vw"
+            imgClassName="w-full rounded-xl"
+          />
+          <figcaption className="mt-2 text-sm text-ink-soft">
+            {t(copy.featCap)}
+          </figcaption>
+        </figure>
+
+        <section className="mt-14">
+          <h2 className="font-display [font-size:var(--text-fluid-h2)]">
+            {t(copy.albumsH)}
+          </h2>
+          <p className="prose-flow mt-3">{t(copy.albumsLede)}</p>
+          <ul className="mt-7 grid gap-5 sm:grid-cols-3">
+            {driveAlbums.map((album) => (
+              <li key={album.url}>
+                <a
+                  href={album.url}
+                  target="_blank"
+                  rel="noopener"
+                  className="group flex h-full flex-col rounded-xl border border-ink/10 bg-bg p-5 no-underline transition-colors hover:border-green-700 hover:bg-surface"
+                >
+                  <span className="text-gold-deep">
+                    <EightStar size={22} />
+                  </span>
+                  <h3 className="mt-3 font-display text-xl text-green-900">
+                    {album.title[lang]}
+                  </h3>
+                  <p className="mt-1.5 grow text-[0.95rem] text-ink-soft">
+                    {album.desc[lang]}
+                  </p>
+                  <span className="mt-4 inline-flex items-center gap-1.5 font-medium text-green-700 underline-offset-4 group-hover:underline">
+                    {t(copy.albumsCta)}
+                    <svg
+                      viewBox="0 0 16 16"
+                      width="14"
+                      height="14"
+                      aria-hidden="true"
+                      className="shrink-0"
+                    >
+                      <path
+                        d="M6 3h7v7M13 3 7.5 8.5M12 9.5V12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h2.5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="mt-3 text-sm text-ink-soft">{t(copy.albumsNote)}</p>
+        </section>
 
         <section className="mt-14">
           <h2 className="font-display [font-size:var(--text-fluid-h2)]">
