@@ -87,14 +87,14 @@ export function Footer({ lang }: { lang: Lang }) {
         </div>
 
       </div>
-      <div className="bg-[oklch(0.16_0.01_160)] py-3.5">
-        <p className="mx-auto max-w-6xl px-4 text-center text-sm text-ivory/80 sm:px-6">
+      <div className="bg-[oklch(0.14_0.008_160)] py-4">
+        <p className="mx-auto max-w-6xl px-4 text-center text-xs font-light tracking-[0.14em] text-ivory/55 sm:px-6">
           This Digital Experience is Part of the{' '}
           <a
             href="https://www.kobisberhad.com"
             target="_blank"
             rel="noopener"
-            className="font-medium text-ivory underline underline-offset-4 hover:text-gold"
+            className="text-gold/85 transition-colors hover:text-gold"
           >
             KOBIS Berhad
           </a>{' '}

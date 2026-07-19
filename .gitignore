@@ -6,3 +6,6 @@ next-env.d.ts
 .DS_Store
 # Deploy artifacts
 *.zip
+
+# Raw private media staging (never commit)
+media-src/
