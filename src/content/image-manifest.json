@@ -1,0 +1,75 @@
+{
+  "buku-perabangan": {
+    "width": 399,
+    "height": 518,
+    "widths": [
+      320
+    ]
+  },
+  "dbak-portrait": {
+    "width": 660,
+    "height": 955,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "keadaan-tingkat-atas": {
+    "width": 481,
+    "height": 639,
+    "widths": [
+      320
+    ]
+  },
+  "keadaan-tingkat-bawah": {
+    "width": 476,
+    "height": 634,
+    "widths": [
+      320
+    ]
+  },
+  "keadaan-verandah": {
+    "width": 478,
+    "height": 634,
+    "widths": [
+      320
+    ]
+  },
+  "logo-wakaf-dbak": {
+    "width": 100,
+    "height": 100,
+    "widths": [
+      100
+    ]
+  },
+  "majlis-2020-invite": {
+    "width": 502,
+    "height": 280,
+    "widths": [
+      320
+    ]
+  },
+  "ramah-tamah-2025": {
+    "width": 1080,
+    "height": 810,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "rumah-batu-historic": {
+    "width": 455,
+    "height": 280,
+    "widths": [
+      320
+    ]
+  },
+  "rumah-batu-2020": {
+    "width": 182,
+    "height": 182,
+    "widths": [
+      182
+    ]
+  }
+}

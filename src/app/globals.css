@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette — see DESIGN.md. Committed forest green anchored on the Wakaf DBAK logo. */
+  --color-ink: oklch(0.24 0.02 160);
+  --color-ink-soft: oklch(0.38 0.02 160);
+  --color-bg: oklch(0.985 0.004 120);
+  --color-surface: oklch(0.955 0.01 130);
+  --color-green-950: oklch(0.23 0.05 155);
+  --color-green-900: oklch(0.28 0.06 155);
+  --color-green-700: oklch(0.38 0.08 155);
+  --color-green-600: oklch(0.45 0.09 152);
+  --color-green-300: oklch(0.82 0.05 150);
+  --color-gold: oklch(0.68 0.1 85);
+  --color-gold-deep: oklch(0.55 0.1 80);
+  --color-terracotta: oklch(0.55 0.12 35);
+  --color-ivory: oklch(0.97 0.01 95);
+
+  --font-display: var(--font-literata), Georgia, serif;
+  --font-body: var(--font-alegreya), system-ui, sans-serif;
+
+  --text-fluid-hero: clamp(2.1rem, 5.5vw, 4.25rem);
+  --text-fluid-h2: clamp(1.65rem, 3.4vw, 2.6rem);
+  --text-fluid-h3: clamp(1.25rem, 2.2vw, 1.6rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+::selection {
+  background: var(--color-green-300);
+  color: var(--color-green-950);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-green-600);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.on-dark :focus-visible {
+  outline-color: var(--color-gold);
+}
+
+/* Prose measure for long-form history */
+.prose-flow {
+  max-width: 68ch;
+}
+.prose-flow > * + * {
+  margin-top: 1em;
+}
+.prose-flow h2 {
+  margin-top: 2.2em;
+  font-size: var(--text-fluid-h2);
+}
+.prose-flow h3 {
+  margin-top: 1.8em;
+  font-size: var(--text-fluid-h3);
+}
+
+/* Hairline editorial rule */
+.rule-gold {
+  border: 0;
+  border-top: 1px solid color-mix(in oklch, var(--color-gold) 55%, transparent);
+}
+
+/* Hero entrance: enhances already-visible content, no content gating */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-rise {
+    animation: hero-rise 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  .hero-rise-late {
+    animation: hero-rise 0.7s 0.15s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+  @keyframes hero-rise {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+/* Archival duotone for historical photographs */
+.duotone {
+  filter: grayscale(1) sepia(0.14) contrast(1.02);
+}
+
+/* No-JS mobile nav via <details> */
+.nav-details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+.nav-details > summary::-webkit-details-marker {
+  display: none;
+}
