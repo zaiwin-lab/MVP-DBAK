@@ -88,11 +88,11 @@ export function Footer({ lang }: { lang: Lang }) {
 
         <div className="mt-12 flex justify-center border-t border-ivory/10 pt-10">
           <img
-            src="/images/logo-warisan-dbak-192.png"
+            src="/images/logo-wakaf-dbak-192.png"
             alt={
               lang === 'ms'
-                ? 'Logo rasmi Warisan DBAK'
-                : 'Official Warisan DBAK seal'
+                ? 'Logo rasmi Wakaf DBAK'
+                : 'Official Wakaf DBAK seal'
             }
             width={88}
             height={88}

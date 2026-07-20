@@ -36,11 +36,11 @@ export function Header({
           className="flex items-center gap-3 no-underline"
         >
           <img
-            src="/images/logo-warisan-dbak-192.png"
+            src="/images/logo-wakaf-dbak-192.png"
             alt={
               lang === 'ms'
-                ? 'Logo rasmi Warisan DBAK'
-                : 'Official Warisan DBAK seal'
+                ? 'Logo rasmi Wakaf DBAK'
+                : 'Official Wakaf DBAK seal'
             }
             width={44}
             height={44}
