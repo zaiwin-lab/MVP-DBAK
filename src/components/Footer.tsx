@@ -86,6 +86,20 @@ export function Footer({ lang }: { lang: Lang }) {
           </div>
         </div>
 
+        <div className="mt-12 flex justify-center border-t border-ivory/10 pt-10">
+          <img
+            src="/images/logo-warisan-dbak-192.png"
+            alt={
+              lang === 'ms'
+                ? 'Logo rasmi Warisan DBAK'
+                : 'Official Warisan DBAK seal'
+            }
+            width={88}
+            height={88}
+            loading="lazy"
+            className="h-22 w-22 drop-shadow-[0_2px_10px_rgba(0,0,0,0.35)]"
+          />
+        </div>
       </div>
       <div className="bg-[oklch(0.14_0.008_160)] py-4">
         <p className="mx-auto max-w-6xl px-4 text-center text-xs font-light tracking-[0.14em] text-ivory/55 sm:px-6">

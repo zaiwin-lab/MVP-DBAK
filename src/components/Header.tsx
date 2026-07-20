@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { href, routes, type Lang, type RouteKey } from '@/lib/i18n';
-import { EightStar } from './Motif';
 
 const NAV: RouteKey[] = [
   'story',
@@ -36,9 +35,17 @@ export function Header({
           href={href('home', lang)}
           className="flex items-center gap-3 no-underline"
         >
-          <span className="text-green-700">
-            <EightStar size={34} />
-          </span>
+          <img
+            src="/images/logo-warisan-dbak-192.png"
+            alt={
+              lang === 'ms'
+                ? 'Logo rasmi Warisan DBAK'
+                : 'Official Warisan DBAK seal'
+            }
+            width={44}
+            height={44}
+            className="h-11 w-11"
+          />
           <span className="leading-tight">
             <strong className="block font-display text-lg tracking-tight text-green-900">
               Rumah Batu
