@@ -15,6 +15,7 @@ export type RouteKey =
   | 'restoration'
   | 'waris8'
   | 'activities'
+  | 'albums'
   | 'gallery'
   | 'news'
   | 'resources'
@@ -47,6 +48,11 @@ export const routes: Record<RouteKey, { ms: string; en: string; label: Bi }> = {
     ms: '/aktiviti/',
     en: '/en/activities/',
     label: { ms: 'Aktiviti & Pencapaian', en: 'Activities & Milestones' },
+  },
+  albums: {
+    ms: '/aktiviti/album/',
+    en: '/en/activities/albums/',
+    label: { ms: 'Album Majlis', en: 'Event Albums' },
   },
   gallery: {
     ms: '/galeri/',

@@ -1,4 +1,856 @@
 {
+  "album-galeri-01": {
+    "width": 1080,
+    "height": 914,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-02": {
+    "width": 1079,
+    "height": 610,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-03": {
+    "width": 1079,
+    "height": 610,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-04": {
+    "width": 1080,
+    "height": 731,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-05": {
+    "width": 930,
+    "height": 664,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-galeri-06": {
+    "width": 1079,
+    "height": 624,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-07": {
+    "width": 973,
+    "height": 645,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-08": {
+    "width": 1079,
+    "height": 806,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-09": {
+    "width": 1079,
+    "height": 806,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-10": {
+    "width": 1079,
+    "height": 1116,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-11": {
+    "width": 1079,
+    "height": 806,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-12": {
+    "width": 1075,
+    "height": 646,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-13": {
+    "width": 1079,
+    "height": 714,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-14": {
+    "width": 1079,
+    "height": 730,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-15": {
+    "width": 975,
+    "height": 588,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-16": {
+    "width": 1079,
+    "height": 758,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-17": {
+    "width": 1079,
+    "height": 636,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-18": {
+    "width": 1080,
+    "height": 652,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-19": {
+    "width": 1039,
+    "height": 662,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-20": {
+    "width": 1079,
+    "height": 749,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-21": {
+    "width": 1080,
+    "height": 736,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-22": {
+    "width": 1079,
+    "height": 773,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-23": {
+    "width": 1080,
+    "height": 618,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-24": {
+    "width": 1079,
+    "height": 696,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-25": {
+    "width": 1080,
+    "height": 684,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-26": {
+    "width": 1080,
+    "height": 705,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-27": {
+    "width": 1080,
+    "height": 922,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-28": {
+    "width": 1080,
+    "height": 1015,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-29": {
+    "width": 1079,
+    "height": 700,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-30": {
+    "width": 1079,
+    "height": 680,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-31": {
+    "width": 1079,
+    "height": 700,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-32": {
+    "width": 1079,
+    "height": 684,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-galeri-33": {
+    "width": 1079,
+    "height": 610,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-01": {
+    "width": 853,
+    "height": 1280,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-khatam-02": {
+    "width": 728,
+    "height": 1280,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-khatam-03": {
+    "width": 853,
+    "height": 1280,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-khatam-04": {
+    "width": 1080,
+    "height": 767,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-05": {
+    "width": 1000,
+    "height": 750,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-06": {
+    "width": 960,
+    "height": 1280,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-07": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-08": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-09": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-10": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-11": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-12": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-13": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-14": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-15": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-16": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-17": {
+    "width": 1000,
+    "height": 750,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-18": {
+    "width": 960,
+    "height": 540,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-19": {
+    "width": 960,
+    "height": 540,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-20": {
+    "width": 1080,
+    "height": 810,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-21": {
+    "width": 540,
+    "height": 960,
+    "widths": [
+      320
+    ]
+  },
+  "album-khatam-22": {
+    "width": 768,
+    "height": 1020,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-khatam-23": {
+    "width": 1000,
+    "height": 467,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-24": {
+    "width": 1080,
+    "height": 724,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-25": {
+    "width": 1080,
+    "height": 845,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-26": {
+    "width": 1048,
+    "height": 692,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-27": {
+    "width": 1280,
+    "height": 960,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-28": {
+    "width": 1152,
+    "height": 864,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-29": {
+    "width": 1079,
+    "height": 680,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-khatam-30": {
+    "width": 1280,
+    "height": 576,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-31": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-32": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-33": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-34": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-35": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-36": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-37": {
+    "width": 959,
+    "height": 1280,
+    "widths": [
+      320,
+      640
+    ]
+  },
+  "album-khatam-38": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-39": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-40": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-41": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-42": {
+    "width": 1280,
+    "height": 963,
+    "widths": [
+      320,
+      640,
+      960,
+      1280
+    ]
+  },
+  "album-khatam-43": {
+    "width": 1024,
+    "height": 768,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-01": {
+    "width": 1079,
+    "height": 1524,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-02": {
+    "width": 1079,
+    "height": 764,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-03": {
+    "width": 1051,
+    "height": 598,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-04": {
+    "width": 1077,
+    "height": 1344,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-05": {
+    "width": 1080,
+    "height": 1514,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-06": {
+    "width": 1080,
+    "height": 597,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-07": {
+    "width": 1079,
+    "height": 1524,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-08": {
+    "width": 1079,
+    "height": 1505,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-09": {
+    "width": 1080,
+    "height": 710,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-10": {
+    "width": 1080,
+    "height": 1493,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-11": {
+    "width": 1060,
+    "height": 471,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-12": {
+    "width": 1079,
+    "height": 620,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-13": {
+    "width": 1080,
+    "height": 1493,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-14": {
+    "width": 1069,
+    "height": 538,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-15": {
+    "width": 1069,
+    "height": 538,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-16": {
+    "width": 1080,
+    "height": 1452,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
+  "album-program-17": {
+    "width": 1080,
+    "height": 1499,
+    "widths": [
+      320,
+      640,
+      960
+    ]
+  },
   "buku-perabangan": {
     "width": 399,
     "height": 518,
