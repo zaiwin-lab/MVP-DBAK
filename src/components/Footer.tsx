@@ -103,7 +103,7 @@ export function Footer({ lang }: { lang: Lang }) {
       </div>
       <div className="bg-[oklch(0.14_0.008_160)] py-4">
         <p className="mx-auto max-w-6xl px-4 text-center text-xs font-light tracking-[0.14em] text-ivory/55 sm:px-6">
-          A Digital Legacy by Zaiwin &amp;{' '}
+          Digital Platform by Zaiwin &amp;{' '}
           <a
             href="https://www.kobisberhad.com"
             target="_blank"
@@ -112,7 +112,7 @@ export function Footer({ lang }: { lang: Lang }) {
           >
             KOBIS
           </a>{' '}
-          team
+          Team
         </p>
       </div>
     </footer>
