@@ -30,7 +30,7 @@ export function Header({
       >
         {skip}
       </a>
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4 sm:px-6">
+      <div className="relative mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-x-6 gap-y-3 px-4 py-4 sm:px-6">
         <Link
           href={href('home', lang)}
           className="flex items-center gap-3 no-underline"
@@ -67,7 +67,7 @@ export function Header({
           </a>
 
           {/* No-JS mobile menu */}
-          <details className="nav-details relative md:hidden">
+          <details className="nav-details md:hidden">
             <summary
               className="rounded border border-ink/20 px-3 py-1.5 text-sm font-medium"
               aria-label={lang === 'ms' ? 'Menu utama' : 'Main menu'}
@@ -76,7 +76,7 @@ export function Header({
             </summary>
             <nav
               aria-label={lang === 'ms' ? 'Navigasi utama' : 'Main navigation'}
-              className="absolute right-0 z-40 mt-2 w-64 rounded-lg border border-ink/10 bg-bg p-2 shadow-lg"
+              className="absolute right-4 z-40 mt-2 w-64 max-w-[calc(100vw-2rem)] rounded-lg border border-ink/10 bg-bg p-2 shadow-lg sm:right-6"
             >
               <ul>
                 {NAV.map((key) => (
