@@ -97,3 +97,14 @@ errors. Screenshots of the current build are in `docs/screenshots/`.
   privacy-respecting option and add a consent notice first.
 - Forms: intentionally email-based (`maklum@w8dbak.com`) until the committee
   approves a data-handling flow; see the Participate page.
+
+
+---
+
+## Portfolio Status & Delivery Role
+
+**Status:** Functional digital-heritage platform developed with explicit source, consent, privacy and content-review controls.
+
+Product strategy, stakeholder requirements and solution direction are led by **Zaiwin Kassim**, together with the **KOBIS AI Prodigy Team**, using supervised AI-assisted development.
+
+References to heritage bodies, committees or community materials describe the platform context and do not imply endorsement beyond formally authorised use. Public content should remain subject to source verification, consent and committee approval.
