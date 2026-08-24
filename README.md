@@ -1,110 +1,103 @@
-# Rumah Batu — Waris DBAK heritage website
+# Rumah Batu — Waris DBAK Digital Heritage Platform
 
-Public heritage website for **Rumah Batu** (Kuching, Sarawak, built 1863 by
-family account) and the eight family lines of **Datu Bandar Abang Haji Muhammad
-Kassim (W8-DBAK)**.
+> **Maturity:** Working public heritage platform · bilingual static release with source and consent controls
 
-> Lapan jalur keluarga. Satu warisan bersama.
-> Eight family lines. One shared heritage.
+A bilingual digital home for Rumah Batu and the eight family lines of Datu Bandar Abang Haji Muhammad Kassim (W8-DBAK). The platform presents family heritage, restoration activity and participation pathways while keeping unresolved archives and unapproved material outside the public layer.
 
-Bilingual (Bahasa Melayu primary at `/`, English under `/en/`), static-first
-Next.js + TypeScript + Tailwind, fully exportable to any inexpensive static
-host. No tracking, no third-party requests, self-hosted fonts, WCAG 2.2 AA.
+**Live platform:** [dbaksarawak.org](https://dbaksarawak.org/)
 
-## Local setup
+## Business problem
+
+Family and community heritage can become fragmented across oral accounts, private chats, documents and personal photo collections. A public website must make that history understandable without publishing unverified claims, exposing private material or overstating restoration progress. This project tests a content-governance model in which source status, consent and committee review are part of the product architecture.
+
+## Intended users
+
+- Waris DBAK descendants in Malaysia and abroad
+- Family elders and younger generations
+- Heritage researchers and educators
+- Restoration and programme stakeholders
+- Visitors learning about Rumah Batu and its family context
+
+## Demonstrated capabilities
+
+- Bahasa Melayu-first site with complete English routes
+- Static, mobile-first heritage pages
+- Timeline entries carrying visible source classifications
+- Eight-family-line presentation
+- Restoration phases and status communication
+- Gallery records with captions, dates, credits and consent fields
+- News and update publishing through typed content files
+- Source-audit, pending-content and content-review documentation
+- Responsive image optimisation and manifest generation
+- Sitemap, canonical metadata, Open Graph and static 404 output
+- Automated mobile/desktop screenshot and console-error QA script
+- Keyboard navigation, reduced-motion support and accessibility-oriented structure
+
+## Strategic value
+
+Rumah Batu demonstrates that digital heritage is not only a design exercise. The repository treats evidence, privacy, consent, translation and approval status as first-class delivery requirements. This creates a reusable approach for family archives, cultural organisations and community heritage programmes that need a dignified public layer without exposing their entire research archive.
+
+## What is actually implemented
+
+The platform is a static-export Next.js application. Historical and restoration content is maintained in typed bilingual source files. Timeline records include evidence categories such as document, court, family, committee and pending; these classifications communicate provenance but do not independently prove each historical statement.
+
+Archive material listed in `CONTENT-PENDING.md` was not available to the original build environment and is intentionally not represented as verified public content. Restoration status changes and public photographs remain subject to authorised evidence and consent.
+
+No generative-AI historian, automated fact verification, donation processor, private family database or member account system is implemented.
+
+## Technology
+
+- Next.js 15, React 19 and TypeScript
+- Tailwind CSS
+- Static export
+- Typed bilingual content modules
+- Sharp-based image optimisation
+- Self-hosted fonts
+- Playwright-style screenshot QA script
+- Netlify-compatible static deployment
+
+## Delivery role
+
+**Ts. Zaiwin Kassim** leads product strategy, stakeholder requirements, heritage-content governance and supervised AI-assisted delivery with the **KOBIS AI Prodigy Team**. The repository demonstrates responsible digital-heritage delivery; it does not claim authorship of family history, institutional endorsement or authority to determine disputed heritage facts.
+
+## Responsible-use boundaries
+
+- Historical claims must preserve their source classification and remain open to correction when stronger evidence appears.
+- Family accounts, official records and committee statements should not be treated as interchangeable forms of evidence.
+- Living people’s photographs, names and stories require appropriate consent and purpose limitation.
+- Identity documents, phone numbers, private messages, addresses and unapproved archives must remain outside the public bundle.
+- Restoration progress, funding and completion status must be supported by current authorised evidence.
+- Bilingual changes should be reviewed together so meaning is not lost or materially altered.
+- Cultural, religious, genealogical and ownership disputes require authorised human governance; the website must not adjudicate them.
+- External bodies or community references do not imply endorsement unless formally documented.
+
+## Current limitations
+
+- The platform has no private archive-management or member-access layer.
+- Public participation uses email rather than a governed submission workflow.
+- Some source archives remain unavailable or pending review.
+- Evidence classification is manually maintained.
+- No analytics are installed; audience reach and adoption are therefore not evidenced.
+- WCAG intent is documented, but independent accessibility certification is not evidenced.
+- Public availability does not establish that every family branch has approved every item.
+
+## Run locally
 
 ```bash
 npm install
-npm run dev        # develop at http://localhost:3000
-npm run check      # lint + typecheck + static build (out/)
-npm start          # serve the static build (out/) locally
+npm run dev
+npm run check
 ```
 
-`npm run build` outputs the complete static site to `out/` (includes
-`404.html`, `sitemap.xml`, `robots.txt`). Deploy `out/` to any static host
-(Netlify, Cloudflare Pages, GitHub Pages, Exabytes static hosting).
+## Content workflow
 
-## Editing content
+1. Confirm the source and approval status.
+2. Update both Bahasa Melayu and English content.
+3. Record image credit and consent.
+4. Run image processing where applicable.
+5. Run lint, type checking, static build and visual QA.
+6. Publish only material cleared for the public layer.
 
-All copy lives in typed TypeScript, not scattered through markup:
+## Portfolio evidence
 
-| What | Where |
-|---|---|
-| Timeline entries (history + 2020-renewal) | `src/content/timeline.ts` |
-| The eight lines | `src/content/waris8.ts` |
-| Restoration phases + statuses | `src/content/phases.ts` |
-| Gallery items (caption/date/credit/consent) | `src/content/gallery.ts` |
-| News/updates posts | `src/content/updates.ts` |
-| Per-page copy (both languages) | `copy` object at the top of each file in `src/components/pages/` |
-| Nav labels & routes | `src/lib/i18n.ts` |
-
-Every entry is a `{ ms, en }` pair; update both languages together. Timeline
-and history entries carry a `source` class (`document`, `court`, `family`,
-`committee`, `pending`) which renders the visible "Sources & Notes" label —
-keep it accurate.
-
-**Adding a news post:** prepend an object to `src/content/updates.ts`. Keep
-`verified: true` only for posts checked against documents or public records.
-
-**Restoration statuses** (`src/content/phases.ts`) may only move forward on
-verified evidence. Never invent percentages; the design has no percentage
-indicator on purpose.
-
-## Image workflow
-
-1. Put the approved original in `assets-original/` (kept out of the public
-   bundle) with a meaningful kebab-case name.
-2. Run `npm run images` — generates responsive WebP + JPEG into
-   `public/images/` and refreshes `src/content/image-manifest.json`
-   (dimensions used to prevent layout shift).
-3. Reference it with `<Pic name="your-name" alt="…" />` or add a gallery item
-   in `src/content/gallery.ts` with caption, date, credit and consent status.
-
-Privacy: never add images containing identity documents, phone numbers,
-private chat screenshots, or unapproved photos of living people (see
-`CONTENT-REVIEW.md`).
-
-## Structure
-
-- `src/app/(ms)/…` — Bahasa Melayu routes (root), `<html lang="ms">`
-- `src/app/(en)/en/…` — English routes, `<html lang="en">`
-- `src/components/pages/` — shared page implementations (one per route)
-- `src/components/` — design-system components (Pic, Timeline, PhaseTracker,
-  Waris8Diagram, GalleryGrid, …)
-- `scripts/optimize-images.mjs` — media pipeline
-- `scripts/qa-screenshots.mjs` — QA screenshots + console-error check
-- `PRODUCT.md` / `DESIGN.md` — strategy and design system reference
-- `docs/SOURCE-AUDIT.md` — where every historical claim comes from
-- `CONTENT-REVIEW.md` — items awaiting family approval before launch
-- `CONTENT-PENDING.md` — archives not yet reviewed
-
-## QA
-
-```bash
-npm run check                       # lint + types + build
-npm start                           # serve out/ on :3000 (or serve out -l 8311)
-node scripts/qa-screenshots.mjs http://localhost:3000 qa-screenshots
-```
-
-The QA script captures every page at 375px and 1440px and fails on console
-errors. Screenshots of the current build are in `docs/screenshots/`.
-
-## Deployment notes
-
-- Set the production domain in `src/lib/i18n.ts` (`SITE_URL`) if it changes;
-  sitemap, canonical URLs and Open Graph all derive from it.
-- Analytics: none installed. If the committee approves one later, choose a
-  privacy-respecting option and add a consent notice first.
-- Forms: intentionally email-based (`maklum@w8dbak.com`) until the committee
-  approves a data-handling flow; see the Participate page.
-
-
----
-
-## Portfolio Status & Delivery Role
-
-**Status:** Functional digital-heritage platform developed with explicit source, consent, privacy and content-review controls.
-
-Product strategy, stakeholder requirements and solution direction are led by **Zaiwin Kassim**, together with the **KOBIS AI Prodigy Team**, using supervised AI-assisted development.
-
-References to heritage bodies, committees or community materials describe the platform context and do not imply endorsement beyond formally authorised use. Public content should remain subject to source verification, consent and committee approval.
+Rumah Batu demonstrates bilingual information architecture, evidence-aware content modelling, privacy-by-design, static performance engineering and a disciplined human-governance approach to culturally sensitive digital transformation.
